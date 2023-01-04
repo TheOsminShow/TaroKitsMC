@@ -16,9 +16,3 @@
 /* 16 */     if (Core.getOpenInv().containsKey(player)) paramInventoryDragEvent.setCancelled(true); 
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Listener\InventoryDrag.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
