@@ -1,0 +1,96 @@
+name: InvSaver
+version: '2.43'
+api-version: 1.13
+authors: [ Nandi0813 ]
+main: com.dnInventorySaver.plugin.Core
+depend: [Vault]
+commands:
+  inventory:
+    aliases: inv
+permissions:
+
+  invsaver.*:
+    description: Everything except bypasses.
+    children:
+      invsaver.reload: true
+      invsaver.group.*: true
+      invsaver.others.*: true
+      invsaver.command.*: true
+      invsaver.bypass.everything: true
+  invsaver.others.*:
+    description: Other players inventories.
+    children:
+      invsaver.others.info: true
+      invsaver.others.open: true
+      invsaver.others.inv.open: true
+      invsaver.others.inv.edit: true
+      invsaver.others.inv.delete: true
+      invsaver.others.clear: true
+      invsaver.others.inv.load: true
+      invsaver.others.save: true
+      invsaver.others.save.bypass.amount: true
+  invsaver.command.*:
+    description: Use for all commands
+    children:
+      invsaver.command.menu: true
+      invsaver.command.load: true
+      invsaver.command.clear: true
+      invsaver.command.sync: true
+  invsaver.bypass.*:
+    description: No one will be able to do anything with your inventories.
+    children:
+      invsaver.bypass.edit: true
+      invsaver.bypass.forcesave: true
+      invsaver.others.save.bypass.amount: true
+      invsaver.bypass.disabledworlds: true
+      invsaver.bypass.saveprice: true
+      invsaver.bypass.open: false
+  invsaver.group.*:
+    description: Unlimited inventory save.
+    children:
+      invsaver.bypass.saveprice: true
+
+  invsaver.reload:
+    description: Reload the the config and language files.
+
+  invsaver.command.menu:
+    description: Use the /inv menu command
+  invsaver.command.load:
+    description: Use the /inv load command
+  invsaver.command.clear:
+    description: Clear all inventories.
+  invsaver.command.sync:
+    description: Sync command between databases.
+
+  invsaver.others.info:
+    description: /inv info for every player
+  invsaver.others.open:
+    description: Open others summary inventory.
+  invsaver.others.inv.open:
+    description: Open others inventories.
+    children:
+      invsaver.others.open: true
+  invsaver.others.inv.edit:
+    description: Edit others inventories.
+  invsaver.others.inv.delete:
+    description: Delete others inventories.
+  invsaver.others.clear:
+    description: Clear players all inventories.
+  invsaver.others.inv.load:
+    description: Load others inventories.
+  invsaver.others.save:
+    description: Force save others inventories.
+
+  invsaver.bypass.edit:
+    description: No one will be able to edit your inventories.
+  invsaver.bypass.open:
+    description: No one will be able to open your inventories.
+    default: false
+  invsaver.bypass.disabledworlds:
+    description: World limit won't effect you
+  invsaver.bypass.saveprice:
+    description: Inventory save won't cost any money.
+  invsaver.bypass.forcesave:
+    description: Players can't force save your inventory.
+  invsaver.others.save.bypass.amount:
+    description: Unlimited save for other players.

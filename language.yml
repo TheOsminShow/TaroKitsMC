@@ -1,0 +1,101 @@
+#
+# I recommend reading the config.yml and the spigot page first!
+#
+dont-have-permission: "&cYou don't have permission to use this!"
+reload: "&aFiles reloaded successfully!"
+no-mysql-connection: "&cThere is no mysql connection. You should check the config file."
+sync-mysql-to-flatfile: "&aYou successfully synchronized the mysql database to the flatfile."
+sync-flatfile-to-mysql: "&aYou successfully synchronized the flatfile database to the mysql."
+dont-have-info: "&cYou don't have any information about your inventories."
+target-dont-have-info: "&cPlayer doesn't have any information about their inventories."
+no-inv-saved: "&cYou don't have any inventory saved."
+target-no-inv-saved: "&e%target% &7has no inventory saved."
+sum-gui-title: "&8%target% &6&l| &8(%page%/%allpage%)"
+inv-deleted: "&cYour inventory &e%invname% &cgot deleted!"
+inv-deleted-by-sb: "&cYour inventory &e%invname% &cgot deleted by &6%player%&c!"
+open-inv-deleted: "&cThe inventory which was open got deleted!"
+inv-loaded: "&aYou successfully loaded inventory &e%invname%&a."
+inv-not-empty: "&cBecause your inventory wasn't empty, your stuff got dropped on the ground."
+cant-find-player: "&cPlayer not found!"
+cant-open-sb-inv: "&cYou can't open their inventory."
+cant-find-inv: "&cCan't find inventory under this name."
+inv-saved: "&aYour inventory successfully saved in the database."
+inv-save-problem: "&cThe name must be at least 5 and no more than 18."
+money-withdraw: "&a%money%$ has been deducted from your account."
+not-enough-money: "&cYou don't have enough money on your account. &7(%money%$)"
+name-taken: "&cInventory name is already taken."
+inv-empty: "&cYour inventory is empty, so you can't save it!"
+cant-save-inv: "&cYou don't have permission to save any more inventory!"
+target-inv-empty: "&cTarget's inventory is empty."
+cant-save-sb-inv: "&cYou can't save their inventory!"
+saved-sb-inv: "&aYou saved &e%target%&a's inventory!"
+inv-saved-by: "&aYour inventory got saved by &e%player%&a with name &7%invname%&a."
+inv-dont-exists: "&cInventory doesn't exits!"
+inv-clear: "&aAll inventories have been successfully deleted!"
+inv-clear-by: "&cYour inventories have been deleted by &e%player%&c."
+cant-clear: "&cYou can't clear their inventories."
+
+info-command:
+  - "&7&m------------------------------------"
+  - " &6&l%player%'s &7informations"
+  - ""
+  - " &6» &7Invsaver Group: &e%group%"
+  - " &6» &7Saved inventories: &e%savedinv%"
+  - " &6» &7Can save: &e%allinv%"
+  - " &6» &7Can edit: &e%editinv%"
+  - " &6» &7Save price: &e%price%$"
+  - "&7&m------------------------------------"
+
+Sumgui-normal-icon:
+  name-color: "&6"
+  lore:
+    - ""
+    - "&7Saved by: &e%savedby%"
+    - "&7Saved at: &e%savedat%"
+    - ""
+    - "&7Last modified by: &b%modifiedby%"
+    - "&7Last modified at: &b%modifiedat%"
+    - ""
+    - "&7Click here to &aopen &7the inventory."
+
+Sumgui-dismiss-icon:
+  name-color: "&c"
+  lore:
+    - ""
+    - "&c%invname% &7got deleted!"
+    - ""
+    - "&7Deleted by: &c%deletedby%"
+    - "&7Deleted at: &c%deletedat%"
+    - ""
+    - "&7Click here to &adismiss &7the inventory."
+
+Sumgui-info-icon:
+  name: "&6Information - Page %page%"
+  lore:
+    - ""
+    - "&6%number% &7inventories saved."
+
+Sumgui-nav-icons:
+  close: "&cClose"
+  go-left: "&aGo Page Left"
+  go-right: "&aGo Page Right"
+
+ConfirmationGui:
+  delete:
+    title: "&cAre you sure?"
+    accept-item: "&cDelete Inventory"
+    cancel-item: "&aCancel and go back"
+  clear:
+    title: "&cAre you sure?"
+    accept-item: "&cClear Inventories"
+    cancel-item: "&aCancel and go back"
+  load:
+    title: "&cAre you sure?"
+    accept-item: "&cLoad Inventory"
+    cancel-item: "&aCancel and go back"
+
+InvGUI:
+  title: "&6%invname% &8inventory"
+  back: "&aBack"
+  load: "&6Load"
+  delete: "&cDelete"

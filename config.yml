@@ -1,0 +1,146 @@
+# Made by Nandi0813
+# Contact on Discord: Nandi0813#3062
+# Version 1.0
+#########################################
+#
+# You can find the permissions and commands on
+# the spigot page of the plugin!
+#
+#########################################
+#
+# Plugin configuration:
+#
+# The plugin will save in this format the date when sb saves or edits an inventory.
+# Help for the formating: https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+date-format: "dd/MM/yyyy HH:mm:ss"
+#########################################
+# If true, the console alert your when a new update comes out.
+#########################################
+update-checker: true
+#########################################
+# If true players can open inventory (same as /inv menu but not running through command so if you want to disable command and just using this it will work fine) by clicking on the block below.
+#########################################
+open-inv-with-block:
+  enable: true
+  material: ENDER_CHEST
+  # choices: RIGHT or LEFT
+  clicktype: Right
+  # In the disabled worlds player won't be able to use the block click function. Except players with "invsaver.bypass.disabledworlds" permission.
+  disabled-worlds:
+    - world
+#########################################
+# Disable the economy manager for the plugin.
+# If it's true, the save price for the groups won't matter.
+#########################################
+economy:
+  disable: false
+#########################################
+# If true, the inventory automatically deletes itself when loaded.
+#########################################
+load-inv-delete: true
+#########################################
+# If true, the inventory automatically deletes itself when someone else loads a players inventory.
+#########################################
+load-other-inv-delete: false
+#########################################
+# If true, the inventory automatically deletes itself when it remains empty.
+#########################################
+delete-if-inv-empty: true
+#########################################
+# If true the players inventory will be deleted when it gets saved.
+#########################################
+delete-on-save: true
+#########################################
+# You can turn on and off the confirmation gui, which appears when you delete, load or clear inventories.
+#########################################
+confirmation-gui:
+  delete: false
+  load: false
+  clear: false
+#########################################
+# The summary GUI (for short SumGUI) is the place where players can navigate through all of their inv or others.
+#########################################
+SumGUI:
+  LeftNav:
+    material: ARROW
+  RightNav:
+    material: ARROW
+  Info:
+    material: EMERALD
+  # If first-item is true, the plugin will find the first item on the saved inventory and shows it as the icon of the inv in the SumGUI.
+  # If false, it will show what you setup at the material.
+  InvIcon:
+    first-item: true
+    material: GOLD_INGOT
+  Dismiss:
+    material: REDSTONE
+#########################################
+# InvGUI is the GUI which opens when you open an inventory from SumGUI.
+#########################################
+InvGUI:
+  Back:
+    material: ARROW
+  Load:
+    material: BLAZE_POWDER
+  Delete:
+    material: REDSTONE
+#########################################
+# The confirmation GUI is the GUI where players have to approve tasks.
+#########################################
+ConfirmationGui:
+  delete:
+    accept-item-material: EMERALD
+    cancel-item-material: REDSTONE
+  clear:
+    accept-item-material: EMERALD
+    cancel-item-material: REDSTONE
+  load:
+    accept-item-material: EMERALD
+    cancel-item-material: REDSTONE
+#########################################
+# The type of the database.
+# Options: flatfile or mysql
+# Flatfile will save data in your local storage in the plugins/invsaver folder.
+#########################################
+database-type: flatfile
+#########################################
+# Mysql Database Connection
+#########################################
+mysql-database:
+  host: localhost
+  port: 3306
+  database: inventory_saver_db
+  user: root
+  password: ""
+#########################################
+# You can setup the permissions as you wish. Remove, add, edit
+# Continue the list by
+# nameofperm:
+#   permission: "invsaver.group.permission"
+#   amount: 12
+#   edit: true
+#
+# !!!You must start the permission with invsaver.group.
+# The amount means how many inventories will the player be able to save with the permission.
+#########################################
+PERMISSIONS:
+  default:
+    permission: "invsaver.group.default"
+    amount: 2
+    edit: false
+    save-price: 100
+  gold:
+    permission: "invsaver.group.gold"
+    amount: 5
+    edit: true
+    save-price: 50
+  iron:
+    permission: "invsaver.group.iron"
+    amount: 20
+    edit: false
+    save-price: 20
+  dragon:
+    permission: "invsaver.group.dragon"
+    amount: 30
+    edit: true
+    save-price: 0
