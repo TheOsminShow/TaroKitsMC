@@ -17,9 +17,3 @@
 /* 17 */     return Core.getPermissions().playerHas(player.getWorld().getName(), paramOfflinePlayer, paramString);
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Manager\PlayerData\Util\PermissionUtil.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
