@@ -92,9 +92,3 @@
 /* 92 */     return arrayList;
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Command\CommandTabCompleter.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
