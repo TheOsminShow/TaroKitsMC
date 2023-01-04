@@ -29,9 +29,3 @@
 /* 29 */     Bukkit.getServer().getConsoleSender().sendMessage(LanguageManager.getString("reload"));
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Command\Argument\ReloadArgument.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
