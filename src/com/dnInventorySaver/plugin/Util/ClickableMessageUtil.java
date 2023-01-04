@@ -17,9 +17,3 @@
 /* 17 */     paramPlayer.spigot().sendMessage((BaseComponent)textComponent);
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Util\ClickableMessageUtil.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
