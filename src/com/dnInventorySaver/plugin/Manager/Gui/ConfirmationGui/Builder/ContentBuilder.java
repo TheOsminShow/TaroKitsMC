@@ -27,9 +27,3 @@
 /* 27 */     paramInventory.setItem(4, itemStack2);
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Manager\Gui\ConfirmationGui\Builder\ContentBuilder.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
