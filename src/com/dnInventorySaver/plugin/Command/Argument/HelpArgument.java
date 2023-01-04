@@ -62,9 +62,3 @@
 /* 62 */     Bukkit.getServer().getConsoleSender().sendMessage(StringUtil.translate("&7&m---------------------------------------------------"));
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Command\Argument\HelpArgument.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
