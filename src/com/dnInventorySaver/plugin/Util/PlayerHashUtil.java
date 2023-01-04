@@ -42,9 +42,3 @@
 /* 42 */     Core.getInConfirmGUI().put(paramPlayer, paramConfirmationType);
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Util\PlayerHashUtil.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
