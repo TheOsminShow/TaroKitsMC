@@ -72,9 +72,3 @@
 /* 72 */     Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[InvSaver] Database setup complete.");
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\marcp\Downloads\InventorySaver.jar!\com\dnInventorySaver\plugin\Manager\Database\Mysql\MysqlManager.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
